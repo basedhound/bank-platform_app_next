@@ -23,6 +23,7 @@ const AuthForm = ({ type }: { type: string }) => {
   const [user, setUser] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
+  // Define form schema -> lib/utils.ts
   const formSchema = authFormSchema(type);
 
   // Define form
