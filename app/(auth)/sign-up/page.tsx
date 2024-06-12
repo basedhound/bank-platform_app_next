@@ -1,4 +1,5 @@
 import AuthForm from "@/components/shared/AuthForm"
+import { getLoggedInUser } from "@/lib/actions/user.actions"
 
 const SignUp = async () => {
   return (

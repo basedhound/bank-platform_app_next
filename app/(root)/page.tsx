@@ -3,11 +3,11 @@ import RecentTransactions from '@/components/shared/RecentTransactions';
 import RightSidebar from '@/components/shared/RightSidebar';
 import TotalBalanceBox from '@/components/shared/TotalBalanceBox';
 // import { getAccount, getAccounts } from '@/lib/actions/bank.actions';
-// import { getLoggedInUser } from '@/lib/actions/user.actions';
+import { getLoggedInUser } from '@/lib/actions/user.actions';
 
 const Home = async ({ searchParams: { id, page } }: SearchParamProps) => {
   const currentPage = Number(page as string) || 1;
-  // const loggedIn = await getLoggedInUser();
+  const loggedIn = await getLoggedInUser();
   // const accounts = await getAccounts({ 
     // userId: loggedIn.$id 
   // })
@@ -26,7 +26,7 @@ const Home = async ({ searchParams: { id, page } }: SearchParamProps) => {
           <HeaderBox 
             type="greeting"
             title="Welcome"
-            // user={loggedIn?.firstName || 'Guest'}
+            user={loggedIn?.name || 'Guest'}
             subtext="Access and manage your account and transactions efficiently."
           />
 
@@ -46,9 +46,9 @@ const Home = async ({ searchParams: { id, page } }: SearchParamProps) => {
       </div>
 
      <RightSidebar 
-/*         user={loggedIn}
-        transactions={account?.transactions}
-        banks={accountsData?.slice(0, 2)} */
+         user={loggedIn}
+        transactions={[]}
+        banks={[{currentBalance: 123.50}, {currentBalance: 500.50}]} 
       />
     </section>
   )
