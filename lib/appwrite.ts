@@ -1,8 +1,9 @@
 "use server";
-
+//
 import { Client, Account, Databases, Users } from "node-appwrite";
 import { cookies } from "next/headers";
 
+//! Use to return a session
 export async function createSessionClient() {
   const client = new Client()
     .setEndpoint(process.env.NEXT_PUBLIC_APPWRITE_ENDPOINT!)
@@ -23,6 +24,7 @@ export async function createSessionClient() {
   };
 }
 
+//! Use to return everything else
 export async function createAdminClient() {
   const client = new Client()
     .setEndpoint(process.env.NEXT_PUBLIC_APPWRITE_ENDPOINT!)

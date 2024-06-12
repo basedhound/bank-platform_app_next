@@ -13,8 +13,8 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import Footer from "./Footer";
 import { sidebarLinks } from "@/constants";
-// import Footer from "./Footer"
 import { cn } from "@/lib/utils";
 
 //!
@@ -86,7 +86,7 @@ const MobileNav = ({ user }: MobileNavProps) => {
               </nav>
             </SheetClose>
 
-            {/* <Footer user={user} type="mobile" /> */}
+             <Footer user={user} type="mobile" />
           </div>
         </SheetContent>
       </Sheet>
