@@ -1,9 +1,13 @@
-import React from 'react'
+import { Configuration, PlaidApi, PlaidEnvironments } from 'plaid';
 
-const PlaidLink = () => {
-  return (
-    <div>PlaidLink</div>
-  )
-}
+const configuration = new Configuration({
+  basePath: PlaidEnvironments.sandbox,
+  baseOptions: {
+    headers: {
+      'PLAID-CLIENT-ID': process.env.PLAID_CLIENT_ID,
+      'PLAID-SECRET': process.env.PLAID_SECRET,
+    }
+  }
+})
 
-export default PlaidLink
+export const plaidClient = new PlaidApi(configuration);
