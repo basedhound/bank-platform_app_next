@@ -1,8 +1,6 @@
 <div align="center">
-  <br />
-    <a href="https://youtu.be/PuOVqP_cjkE?feature=shared" target="_blank">
-      <img src="https://github.com/adrianhajdin/banking/assets/151519281/3c03519c-7ebd-4539-b598-49e63d1770b4" alt="Project Banner">
-    </a>
+  <br />    
+      <img src="" alt="Project Banner">    
   <br />
 
   <h3 align="center">A Fintech Bank Application</h3>
@@ -18,7 +16,7 @@
 
 ## <a name="introduction">✨ Introduction</a>
 
-Built with Next.js, Horizon is a financial SaaS platform that connects to multiple bank accounts, displays transactions in real-time, allows users to transfer money to other platform users, and manages their finances altogether. 
+Built with Next.js, Horizon is a financial SaaS platform that connects to multiple bank accounts, displays transactions in real-time, allows users to transfer money to other platform users, and manages their finances altogether.
 
 If you're getting started and need assistance or face any bugs, join our active Discord community with over **34k+** members. It's a place where people help each other out.
 
@@ -55,7 +53,7 @@ If you're getting started and need assistance or face any bugs, join our active 
 
 👉 **Responsiveness**: Ensures the application adapts seamlessly to various screen sizes and devices, providing a consistent user experience across desktop, tablet, and mobile platforms.
 
-and many more, including code architecture and reusability. 
+and many more, including code architecture and reusability.
 
 ## <a name="quick-start">🚀 Quick Start</a>
 
@@ -63,11 +61,7 @@ Follow these steps to set up the project locally on your machine.
 
 **Dashboards**
 
-- https://cloud.mongodb.com
-- https://dashboard.clerk.com
-- https://uploadthing.com/dashboard
-- https://dashboard.stripe.com
-- https://platform.openai.com
+- https://cloud.appwrite.io/
 
 **Prerequisites**
 
@@ -133,4 +127,3 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
-
