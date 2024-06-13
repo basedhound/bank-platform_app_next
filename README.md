@@ -57,7 +57,9 @@ Follow these steps to set up the project locally on your machine.
 
 **Dashboards**
 
-- [Appwrite Cloud](https://cloud.appwrite.io)
+- [Appwrite](https://cloud.appwrite.io)
+- [Plaid](https://dashboard.plaid.com/overview)
+- [Dwolla](https://dashboard.plaid.com/overview)
 
 **Prerequisites**
 
