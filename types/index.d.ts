@@ -7,17 +7,15 @@ declare type SearchParamProps = {
 
 // ========================================
 
-// sign-in -> We can add ? at the end of these parameters because it is optional
-// sign-up -> Zod will take care of those parameters and make them requested
 declare type SignUpParams = {
-  firstName?: string;
-  lastName?: string;
-  address1?: string;
-  city?: string;
-  state?: string;
-  postalCode?: string;
-  dateOfBirth?: string;
-  ssn?: string;
+  firstName: string;
+  lastName: string;
+  address1: string;
+  city: string;
+  state: string;
+  postalCode: string;
+  dateOfBirth: string;
+  ssn: string;
   email: string;
   password: string;
 };
