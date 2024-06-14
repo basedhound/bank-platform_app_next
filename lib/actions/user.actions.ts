@@ -22,7 +22,7 @@ const {
   APPWRITE_BANK_COLLECTION_ID: BANK_COLLECTION_ID,
 } = process.env;
 
-//!
+//! Function returns a database user instead of a session user
 export const getUserInfo = async ({ userId }: getUserInfoProps) => {
   try {
     const { database } = await createAdminClient();
@@ -45,22 +45,20 @@ export const signIn = async ({ email, password }: signInProps) => {
     const { account } = await createAdminClient();
     const session = await account.createEmailPasswordSession(email, password);
 
-    return parseStringify(session);
+    cookies().set("appwrite-session", session.secret, {
+      path: "/",
+      httpOnly: true,
+      sameSite: "strict",
+      secure: true,
+    });
 
-    // cookies().set("appwrite-session", session.secret, {
-    //   path: "/",
-    //   httpOnly: true,
-    //   sameSite: "strict",
-    //   secure: true,
-    // });
+    const user = await getUserInfo({ userId: session.userId }) 
 
-    // const user = await getUserInfo({ userId: session.userId })
-
-    // return parseStringify(user);
+    return parseStringify(user);
   } catch (error) {
-    console.error("Error", error);
+    console.error('Error', error);
   }
-};
+}
 
 //!
 export const signUp = async ({password, ...userData}: SignUpParams) => {
@@ -120,10 +118,8 @@ export const signUp = async ({password, ...userData}: SignUpParams) => {
 export async function getLoggedInUser() {
   try {
     const { account } = await createSessionClient();
-    // const result = await account.get();
-
-    const user = await account.get();
-    // const user = await getUserInfo({ userId: result.$id})
+    const result = await account.get();
+    const user = await getUserInfo({ userId: result.$id})
 
     return parseStringify(user);
   } catch (error) {
