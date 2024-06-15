@@ -2,6 +2,7 @@ import HeaderBox from "@/components/shared/HeaderBox";
 import RecentTransactions from "@/components/shared/RecentTransactions";
 import RightSidebar from "@/components/shared/RightSidebar";
 import TotalBalanceBox from "@/components/shared/TotalBalanceBox";
+//
 import { getAccount, getAccounts } from "@/lib/actions/bank.actions";
 import { getLoggedInUser } from "@/lib/actions/user.actions";
 
@@ -44,10 +45,10 @@ const Home = async ({ searchParams: { id, page } }: SearchParamProps) => {
 
         {
           <RecentTransactions
-          /*     accounts={accountsData}
-          transactions={account?.transactions}
-          appwriteItemId={appwriteItemId}
-          page={currentPage} */
+            accounts={accountsData}
+            transactions={account?.transactions}
+            appwriteItemId={appwriteItemId}
+            page={currentPage}
           />
         }
       </div>
@@ -55,7 +56,7 @@ const Home = async ({ searchParams: { id, page } }: SearchParamProps) => {
       <RightSidebar
         user={loggedIn}
         transactions={accounts?.transactions}
-        banks={accountsData?.slice(0,2)}
+        banks={accountsData?.slice(0, 2)}
       />
     </section>
   );
