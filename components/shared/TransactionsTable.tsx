@@ -9,6 +9,7 @@ import {
 import { transactionCategoryStyles } from "@/constants"
 import { cn, formatAmount, formatDateTime, getTransactionStatus, removeSpecialCharacters } from "@/lib/utils"
 
+//! Component
 const CategoryBadge = ({ category }: CategoryBadgeProps) => {
   const {
     borderColor,
@@ -25,6 +26,7 @@ const CategoryBadge = ({ category }: CategoryBadgeProps) => {
   )
 } 
 
+//! Transactiontable 
 const TransactionsTable = ({ transactions }: TransactionTableProps) => {
   return (
     <Table>
