@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 //
 import { formatAmount } from "@/lib/utils";
-// import Copy from './Copy'
+import Copy from './Copy'
 
 //!
 const BankCard = ({
@@ -10,12 +10,11 @@ const BankCard = ({
   userName,
   showBalance = true,
 }: CreditCardProps) => {
-  console.log(account);
   return (
     <div className="flex flex-col">
       <Link
         href={`/transaction-history/?id=${account.appwriteItemId}`}
-        className="bank-card">
+        className="bank-card min-w-[325px]">
         <div className="bank-card_content">
           <div>
             <h1 className="text-16 font-semibold text-white">{userName}</h1>
