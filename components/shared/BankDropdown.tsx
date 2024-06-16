@@ -1,9 +1,9 @@
 "use client";
-
-import Image from "next/image";
-import { useSearchParams, useRouter } from "next/navigation";
+//
 import { useState } from "react";
-
+import { useSearchParams, useRouter } from "next/navigation";
+import Image from "next/image";
+//
 import {
   Select,
   SelectContent,
@@ -39,16 +39,12 @@ export const BankDropdown = ({
     }
   };
 
-
-
   return (
     <Select
       defaultValue={selected.id}
-      onValueChange={(value) => handleBankChange(value)}
-    >
+      onValueChange={(value) => handleBankChange(value)}>
       <SelectTrigger
-        className={`flex w-full bg-white gap-3 md:w-[300px] ${otherStyles}`}
-      >
+        className={`flex w-full bg-white gap-3 md:w-[300px] ${otherStyles}`}>
         <Image
           src="icons/credit-card.svg"
           width={20}
@@ -59,8 +55,7 @@ export const BankDropdown = ({
       </SelectTrigger>
       <SelectContent
         className={`w-full bg-white md:w-[300px] ${otherStyles}`}
-        align="end"
-      >
+        align="end">
         <SelectGroup>
           <SelectLabel className="py-2 font-normal text-gray-500">
             Select a bank to display
@@ -69,8 +64,7 @@ export const BankDropdown = ({
             <SelectItem
               key={account.id}
               value={account.appwriteItemId}
-              className="cursor-pointer border-t"
-            >
+              className="cursor-pointer border-t">
               <div className="flex flex-col ">
                 <p className="text-16 font-medium">{account.name}</p>
                 <p className="text-14 font-medium text-blue-600">
