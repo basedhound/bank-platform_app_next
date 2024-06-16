@@ -14,7 +14,7 @@ import { parseStringify } from "../utils";
 import { getTransactionsByBankId } from "./transaction.actions";
 import { getBanks, getBank } from "./user.actions";
 
-// Get multiple bank accounts
+/// Get multiple bank accounts
 export const getAccounts = async ({ userId }: getAccountsProps) => {
   try {
     // get banks from db
@@ -62,7 +62,7 @@ export const getAccounts = async ({ userId }: getAccountsProps) => {
   }
 };
 
-// Get one bank account
+/// Get one bank account
 export const getAccount = async ({ appwriteItemId }: getAccountProps) => {
   try {
     // get bank from db
@@ -127,7 +127,7 @@ export const getAccount = async ({ appwriteItemId }: getAccountProps) => {
   }
 };
 
-// Get bank info
+/// Get bank info
 export const getInstitution = async ({
   institutionId,
 }: getInstitutionProps) => {
@@ -145,7 +145,7 @@ export const getInstitution = async ({
   }
 };
 
-// Get transactions
+/// Get transactions
 export const getTransactions = async ({
   accessToken,
 }: getTransactionsProps) => {
