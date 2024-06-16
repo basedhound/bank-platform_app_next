@@ -8,14 +8,12 @@ import {
   Sheet,
   SheetClose,
   SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import Footer from "./Footer";
 import { sidebarLinks } from "@/constants";
 import { cn } from "@/lib/utils";
+import PlaidLink from "./PlaidLink";
 
 //!
 const MobileNav = ({ user }: MobileNavProps) => {
@@ -82,7 +80,7 @@ const MobileNav = ({ user }: MobileNavProps) => {
                     </SheetClose>
                   );
                 })}
-                USER
+                <PlaidLink user={user} /> 
               </nav>
             </SheetClose>
 
