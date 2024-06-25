@@ -55,6 +55,10 @@ and many more, including code architecture and reusability.
 
 Follow these steps to set up the project locally on your machine.
 
+**Test User**
+- Email : john@mail.com
+- Password : johnjohn
+
 **Dashboards**
 
 - [Appwrite](https://cloud.appwrite.io)
