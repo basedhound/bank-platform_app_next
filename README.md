@@ -2,7 +2,7 @@
     <a href="https://horizon-bank-fv.vercel.app" target="_blank">
       <img src="public/design/preview.webp" alt="Project Banner">
     </a>
-  <h3 align="center">Horizon Bank</h3>
+  <h3 align="center">Banking Platform</h3>
 </div>
 
 ##  <br /> 📋 <a name="table">Table of Contents</a>
@@ -19,8 +19,6 @@
 **[FR]** Construit avec Next.js, Horizon est une plateforme SaaS financière qui se connecte à plusieurs comptes bancaires, affiche les transactions en temps réel, permet aux utilisateurs de transférer de l'argent à d'autres utilisateurs de la plateforme et gère leurs finances de manière globale.
 
 ##  <br /> <a name="tech-stack">⚙️ Tech Stack</a>
-
-Here's the organized list with more details for each technology, including React:
 
 - **Next.js** is a React framework for building high-performance web applications with server-side rendering (SSR) and static site generation (SSG). It optimizes SEO and provides features like automatic code splitting, API routes, and an extensive plugin ecosystem.
 
@@ -46,25 +44,21 @@ Here's the organized list with more details for each technology, including React
 
 ## <br/> <a name="features">📝 Features</a>
 
-👉 **Robust Authentication**: Secure and reliable user login and registration system.
+👉 **Authentication**: An ultra-secure SSR authentication with proper validations and authorization
 
-👉 **Modern Home Page**: Showcases trending podcasts with a sticky podcast player for continuous listening.
+👉 **Connect Banks**: Integrates with Plaid for multiple bank account linking
 
-👉 **Discover Podcasts Page**: Dedicated page for users to explore new and popular podcasts.
+👉 **Home Page**: Shows general overview of user account with total balance from all connected banks, recent transactions, money spent on different categories, etc
 
-👉 **Fully Functional Search**: Allows users to find podcasts easily using various search criteria.
+👉 **My Banks**: Check the complete list of all connected banks with respective balances, account details
 
-👉 **Create Podcast Page**: Enables podcast creation with text-to-audio conversion, AI image generation, and previews.
+👉 **Transaction History**: Includes pagination and filtering options for viewing transaction history of different banks
 
-👉 **Multi Voice AI Functionality**: Supports multiple AI-generated voices for dynamic podcast creation.
+👉 **Real-time Updates**: Reflects changes across all relevant pages upon connecting new bank accounts.
 
-👉 **Profile Page**: View all created podcasts with options to delete them.
+👉 **Funds Transfer**: Allows users to transfer funds using Dwolla to other accounts with required fields and recipient bank ID.
 
-👉 **Podcast Details Page**: Displays detailed information about each podcast, including creator details, number of listeners, and transcript.
-
-👉 **Podcast Player**: Features backward/forward controls, as well as mute/unmute functionality for a seamless listening experience.
-
-👉 **Responsive Design**: Fully functional and visually appealing across all devices and screen sizes.
+👉 **Responsiveness**: Ensures the application adapts seamlessly to various screen sizes and devices, providing a consistent user experience across desktop, tablet, and mobile platforms.
 
 ## <br /> <a name="quick-start">🚀 Quick Start</a>
 
