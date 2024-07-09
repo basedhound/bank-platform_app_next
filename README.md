@@ -20,6 +20,32 @@
 
 ##  <br /> <a name="tech-stack">⚙️ Tech Stack</a>
 
+Here's the organized list with more details for each technology, including React:
+
+- **Next.js** is a React framework for building high-performance web applications with server-side rendering (SSR) and static site generation (SSG). It optimizes SEO and provides features like automatic code splitting, API routes, and an extensive plugin ecosystem.
+
+- **React** is a JavaScript library for building user interfaces. React allows developers to create reusable UI components and manage the state efficiently. It is known for its virtual DOM and component-based architecture, which enhances performance and maintainability.
+
+- **TypeScript** is a statically typed superset of JavaScript that adds type definitions to enhance code maintainability and robustness. It helps developers catch errors early in the development process and provides better tooling and refactoring capabilities.
+
+- **Appwrite** is an open-source backend server that provides essential services like authentication, real-time databases, file storage, cloud functions, and more. It's designed to streamline web and mobile app development by offering a unified API for backend functionalities.
+
+- **Plaid** is a financial services API that allows applications to connect with users' bank accounts, retrieve transaction data, verify account balances, and access other banking information. It supports integrations with major banks and financial institutions, enhancing fintech applications.
+
+- **Dwolla** is a payments platform that enables businesses to integrate ACH (Automated Clearing House) payments for transferring money between bank accounts. It offers features like real-time payments, low transaction fees, and robust security measures, making it suitable for various payment solutions.
+
+- **React Hook Form** is a library for managing form state and validation in React applications. It leverages React hooks to provide a minimal API, improving form performance and reducing the amount of code needed for complex form handling and validation.
+
+- **Zod** is a TypeScript-first schema declaration and validation library that ensures data integrity and validation through its strong typing and inference capabilities. Zod allows developers to define schemas for their data models, providing runtime validation and type safety.
+
+- **Tailwind** is a utility-first CSS framework for rapidly building custom user interfaces. It offers a comprehensive set of utility classes that can be composed to create complex designs without writing custom CSS. TailwindCSS promotes consistency and reusability in styling.
+
+- **Chart.js** is a flexible JavaScript charting library for creating interactive and visually appealing charts and graphs. It supports various chart types, such as line, bar, pie, and radar charts, and offers extensive customization options to tailor the visual representation to specific needs.
+
+- **ShadCN** is a UI component library that provides a set of highly customizable components designed to work seamlessly with React and TailwindCSS. ShadCN focuses on delivering accessible, reusable, and themeable components to accelerate UI development and maintain design consistency.
+
+
+
 
 
 ## <br/> <a name="features">📝 Features</a>
