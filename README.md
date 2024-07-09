@@ -1,71 +1,54 @@
 <div align="center">
-  <br />    
-      <img src="" alt="Project Banner">    
-  <br />
-
-  <h3 align="center">A Fintech Bank Application</h3>
-
+    <a href="https://horizon-bank-fv.vercel.app" target="_blank">
+      <img src="public/preview.webp" alt="Project Banner">
+    </a>
+  <h3 align="center">Banking Platform</h3>
 </div>
 
-## 📋 <a name="table">Table of Contents</a>
+##  <br /> 📋 <a name="table">Table of Contents</a>
 
 - ✨ [Introduction](#introduction)
 - ⚙️ [Tech Stack](#tech-stack)
 - 📝 [Features](#features)
 - 🚀 [Quick Start](#quick-start)
 
-## <a name="introduction">✨ Introduction</a>
+##  <br /> <a name="introduction">✨ Introduction</a>
 
-Built with Next.js, Horizon is a financial SaaS platform that connects to multiple bank accounts, displays transactions in real-time, allows users to transfer money to other platform users, and manages their finances altogether.
+**[EN]** Built with Next.js, Horizon is a financial SaaS platform that connects to multiple bank accounts, displays transactions in real-time, allows users to transfer money to other platform users, and manages their finances altogether.
 
-## <a name="tech-stack">⚙️ Tech Stack</a>
+**[FR]** Construit avec Next.js, Horizon est une plateforme SaaS financière qui se connecte à plusieurs comptes bancaires, affiche les transactions en temps réel, permet aux utilisateurs de transférer de l'argent à d'autres utilisateurs de la plateforme et gère leurs finances de manière globale.
 
-- Next.js
-- TypeScript
-- Appwrite
-- Plaid
-- Dwolla
-- React Hook Form
-- Zod
-- TailwindCSS
-- Chart.js
-- ShadCN
+##  <br /> <a name="tech-stack">⚙️ Tech Stack</a>
 
-## <a name="features">📝 Features</a>
 
-👉 **Authentication**: An ultra-secure SSR authentication with proper validations and authorization
 
-👉 **Connect Banks**: Integrates with Plaid for multiple bank account linking
+## <br/> <a name="features">📝 Features</a>
 
-👉 **Home Page**: Shows general overview of user account with total balance from all connected banks, recent transactions, money spent on different categories, etc
+👉 **Robust Authentication**: Secure and reliable user login and registration system.
 
-👉 **My Banks**: Check the complete list of all connected banks with respective balances, account details
+👉 **Modern Home Page**: Showcases trending podcasts with a sticky podcast player for continuous listening.
 
-👉 **Transaction History**: Includes pagination and filtering options for viewing transaction history of different banks
+👉 **Discover Podcasts Page**: Dedicated page for users to explore new and popular podcasts.
 
-👉 **Real-time Updates**: Reflects changes across all relevant pages upon connecting new bank accounts.
+👉 **Fully Functional Search**: Allows users to find podcasts easily using various search criteria.
 
-👉 **Funds Transfer**: Allows users to transfer funds using Dwolla to other accounts with required fields and recipient bank ID.
+👉 **Create Podcast Page**: Enables podcast creation with text-to-audio conversion, AI image generation, and previews.
 
-👉 **Responsiveness**: Ensures the application adapts seamlessly to various screen sizes and devices, providing a consistent user experience across desktop, tablet, and mobile platforms.
+👉 **Multi Voice AI Functionality**: Supports multiple AI-generated voices for dynamic podcast creation.
 
-and many more, including code architecture and reusability.
+👉 **Profile Page**: View all created podcasts with options to delete them.
 
-## <a name="quick-start">🚀 Quick Start</a>
+👉 **Podcast Details Page**: Displays detailed information about each podcast, including creator details, number of listeners, and transcript.
+
+👉 **Podcast Player**: Features backward/forward controls, as well as mute/unmute functionality for a seamless listening experience.
+
+👉 **Responsive Design**: Fully functional and visually appealing across all devices and screen sizes.
+
+## <br /> <a name="quick-start">🚀 Quick Start</a>
 
 Follow these steps to set up the project locally on your machine.
 
-**Test User**
-- Email : john@mail.com
-- Password : johnjohn
-
-**Dashboards**
-
-- [Appwrite](https://cloud.appwrite.io)
-- [Plaid](https://dashboard.plaid.com/overview)
-- [Dwolla](https://dashboard.plaid.com/overview)
-
-**Prerequisites**
+<br/>**Prerequisites**
 
 Make sure you have the following installed on your machine:
 
@@ -73,30 +56,31 @@ Make sure you have the following installed on your machine:
 - [Node.js](https://nodejs.org/en)
 - [npm](https://www.npmjs.com/) (Node Package Manager)
 
-**Cloning the Repository**
+<br/>**Cloning the Repository**
 
 ```bash
-git clone https://github.com/adrianhajdin/banking.git
-cd banking
+git clone {git remote URL}
 ```
 
-**Installation**
+<br/>**Installation**
 
-Install the project dependencies using npm:
+Let's install the project dependencies, from your terminal, run:
 
 ```bash
 npm install
+# or
+yarn install
 ```
 
-**Set Up Environment Variables**
+<br/>**Set Up Environment Variables**
 
 Create a new file named `.env` in the root of your project and add the following content:
 
 ```env
-#NEXT
-NEXT_PUBLIC_SITE_URL=
+# Change this one with deployment URL!
+NEXT_PUBLIC_SITE_URL=http://localhost:3000
 
-#APPWRITE
+# Appwrite
 NEXT_PUBLIC_APPWRITE_ENDPOINT=https://cloud.appwrite.io/v1
 NEXT_PUBLIC_APPWRITE_PROJECT=
 APPWRITE_DATABASE_ID=
@@ -105,22 +89,43 @@ APPWRITE_BANK_COLLECTION_ID=
 APPWRITE_TRANSACTION_COLLECTION_ID=
 NEXT_APPWRITE_KEY=
 
-#PLAID
+# Plaid
 PLAID_CLIENT_ID=
 PLAID_SECRET=
-PLAID_ENV=
-PLAID_PRODUCTS=
-PLAID_COUNTRY_CODES=
+PLAID_ENV=sandbox
+PLAID_PRODUCTS=auth,transactions,identity
+PLAID_COUNTRY_CODES=US,CA
 
-#DWOLLA
+# Dwolla
 DWOLLA_KEY=
 DWOLLA_SECRET=
 DWOLLA_BASE_URL=https://api-sandbox.dwolla.com
 DWOLLA_ENV=sandbox
-
 ```
 
-Replace the placeholder values with your actual respective account credentials. You can obtain these credentials by signing up on the [Appwrite](https://appwrite.io/?utm_source=youtube&utm_content=reactnative&ref=JSmastery), [Plaid](https://plaid.com/) and [Dwolla](https://www.dwolla.com/)
+Replace the placeholder values with your actual respective account credentials:
+
+- [Appwrite](https://cloud.appwrite.io)
+- [Plaid](https://dashboard.plaid.com/overview)
+- [Dwolla](https://dashboard.plaid.com/overview)
+
+
+
+<br/>**Running the Project**
+
+Installation will take a minute or two, but once that's done, you should be able to run the following command:
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+Open [`http://localhost:3000`](http://localhost:3000) in your browser to view the project.
+
+**Test User**
+- Email : john@mail.com
+- Password : johnjohn
 
 **Running the Project**
 
@@ -129,3 +134,8 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
+
+**Test User**
+- Email : john@mail.com
+- Password : johnjohn
+
