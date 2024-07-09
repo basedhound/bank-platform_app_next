@@ -44,10 +44,6 @@ Here's the organized list with more details for each technology, including React
 
 - **ShadCN** is a UI component library that provides a set of highly customizable components designed to work seamlessly with React and TailwindCSS. ShadCN focuses on delivering accessible, reusable, and themeable components to accelerate UI development and maintain design consistency.
 
-
-
-
-
 ## <br/> <a name="features">📝 Features</a>
 
 👉 **Robust Authentication**: Secure and reliable user login and registration system.
