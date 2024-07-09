@@ -139,7 +139,7 @@ yarn dev
 
 Open [`http://localhost:3000`](http://localhost:3000) in your browser to view the project.
 
-**Test User**
+<br/>**Test User**
 - Email : john@mail.com
 - Password : johnjohn
 
