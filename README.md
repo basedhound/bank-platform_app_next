@@ -143,15 +143,4 @@ Open [`http://localhost:3000`](http://localhost:3000) in your browser to view th
 - Email : john@mail.com
 - Password : johnjohn
 
-**Running the Project**
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
-
-**Test User**
-- Email : john@mail.com
-- Password : johnjohn
 
