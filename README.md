@@ -2,7 +2,7 @@
     <a href="https://horizon-bank-fv.vercel.app" target="_blank">
       <img src="public/design/preview.webp" alt="Project Banner">
     </a>
-  <h3 align="center">Banking Platform</h3>
+  <h3 align="center">Horizon Bank</h3>
 </div>
 
 ##  <br /> 📋 <a name="table">Table of Contents</a>
