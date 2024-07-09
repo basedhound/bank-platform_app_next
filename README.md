@@ -1,6 +1,6 @@
 <div align="center">
     <a href="https://horizon-bank-fv.vercel.app" target="_blank">
-      <img src="public/preview.webp" alt="Project Banner">
+      <img src="public/design/preview.webp" alt="Project Banner">
     </a>
   <h3 align="center">Banking Platform</h3>
 </div>
